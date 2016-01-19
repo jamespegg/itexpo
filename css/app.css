@@ -6977,3 +6977,6 @@ fieldset[disabled] .btn-brand-purple.focus {
 .navbar-purple .navbar-text {
   color: #FFF;
 }
+.map {
+  margin-top: 20px;
+}
