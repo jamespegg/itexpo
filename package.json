@@ -1,0 +1,21 @@
+{
+  "name": "itexpo",
+  "version": "1.0.0",
+  "description": "Simplyhealth IT Expo App",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimplyHealth/itexpo.git"
+  },
+  "author": "James Pegg <james.pegg@simplyhealth.co.uk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimplyHealth/itexpo/issues"
+  },
+  "homepage": "https://github.com/SimplyHealth/itexpo#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^1.1.0"
+  }
+}

@@ -1,0 +1,112 @@
+@import "./node_modules/bootstrap/less/bootstrap";
+
+@brand-red : #9E004F;
+@brand-orange : #DF781C;
+@brand-purple : #472F91;
+
+@border-radius-base:        0;
+@border-radius-large:       0;
+@border-radius-small:       0;
+
+ @navbar-margin-bottom : 0;
+
+html, body {
+    height : 100%
+}
+
+body, main {
+    display : flex;
+    flex-direction: column;
+}
+
+main {
+    flex : 1;
+}
+
+.navbar-back {
+    position : absolute;
+    left : 0;
+    top : 0;
+    padding : 15px;
+    color : #FFF;
+}
+
+.navbar-text {
+    float:none !important;
+}
+
+.btn-block-flexbox {
+    flex : 1;
+    display : flex;
+    flex-direction: column;
+    height : 100%;
+}
+
+.btn-block-flexbox .btn {
+    flex : 1;
+    border-radius: 0 !important;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn-block-flexbox .btn .btn-text {
+    font-size : 2rem;
+}
+
+.btn-brand-red {
+  .button-variant(@btn-primary-color; @brand-red; darken(@brand-red, 10%));
+}
+
+.btn-brand-orange {
+  .button-variant(@btn-primary-color; @brand-orange; darken(@brand-orange, 10%));
+}
+
+.btn-brand-purple {
+  .button-variant(@btn-primary-color; @brand-purple; darken(@brand-purple, 10%));
+}
+
+.list-group {
+  margin-bottom: 0;
+}
+
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+@keyframes slideInRight {
+    from    { transform:translateX(100%); }
+    to      { transform: translateX(0); }
+}
+
+.navbar-red {
+    background-color : @brand-red;
+    border-color : darken(@brand-red, 10%);
+    color : #FFF;
+
+    .navbar-text {
+        color : #FFF;
+    }
+}
+.navbar-orange {
+    background-color : @brand-orange;
+    border-color : darken(@brand-orange, 10%);
+    color : #FFF;
+
+    .navbar-text {
+        color : #FFF;
+    }
+}
+.navbar-purple {
+    background-color : @brand-purple;
+    border-color : darken(@brand-purple, 10%);
+    color : #FFF;
+
+    .navbar-text {
+        color : #FFF;
+    }
+}
+
+// .ng-enter { animation: slideInRight 0.3s both ease-in; z-index: 8888; }
+// .ng-leave { animation: slideOutLeft 0.3s both ease-in; z-index: 9999; }
