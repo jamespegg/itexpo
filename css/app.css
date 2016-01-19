@@ -6728,6 +6728,9 @@ html,
 body {
   height: 100%;
 }
+body {
+  padding-top: 51px;
+}
 body,
 main {
   display: flex;
