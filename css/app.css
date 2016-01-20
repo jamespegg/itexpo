@@ -6731,19 +6731,23 @@ body {
 body {
   padding-top: 51px;
 }
-body,
 main {
-  display: flex;
-  flex-direction: column;
+  height: 100%;
 }
-main {
-  flex: 1;
+.navbar {
+  transition: background-color 0.2s ease;
 }
 .navbar-back {
   position: absolute;
   left: 0;
   top: 0;
   padding: 15px;
+  color: #FFF;
+}
+.navbar-back:active,
+.navbar-back:focus,
+.navbar-back:visited,
+.navbar-back:hover {
   color: #FFF;
 }
 .navbar-text {
@@ -6940,19 +6944,6 @@ fieldset[disabled] .btn-brand-purple.focus {
 .list-group {
   margin-bottom: 0;
 }
-@keyframes slideOutLeft {
-  to {
-    transform: translateX(-100%);
-  }
-}
-@keyframes slideInRight {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
 .navbar-red {
   background-color: #9E004F;
   border-color: #6b0036;
@@ -6979,4 +6970,36 @@ fieldset[disabled] .btn-brand-purple.focus {
 }
 .map {
   margin-top: 20px;
+}
+.list-group-item[data-toggle="collapse"] {
+  cursor: pointer;
+}
+@keyframes slideOutLeft {
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.ng-enter {
+  animation: slideInRight 0.2s both ease;
+  z-index: 8888;
+}
+.ng-leave {
+  animation: slideOutLeft 0.2s both ease;
+  z-index: 9999;
+}
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
 }
