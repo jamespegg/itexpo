@@ -7003,3 +7003,27 @@ fieldset[disabled] .btn-brand-purple.focus {
 .x-ng-cloak {
   display: none !important;
 }
+@media (min-width: 1024px) {
+  html {
+    width: 375px;
+    height: 627px;
+    margin: 1em auto;
+    overflow: hidden;
+    background: #ddd;
+    position: relative;
+    border: 3px solid #999;
+    border-radius: 6px;
+  }
+  body {
+    overflow: hidden;
+    overflow-y: auto;
+    background: #fff;
+  }
+  .navbar-fixed-top {
+    position: absolute;
+  }
+}
+.agenda-list-group .fa {
+  margin-top: 8px;
+  color: #d0cdcd;
+}
