@@ -117,18 +117,6 @@ main {
     cursor : pointer;
 }
 
-@keyframes slideOutLeft {
-    to      { transform: translateX(100%); }
-}
-
-@keyframes slideInRight {
-    from      { transform: translateX(-100%); }
-    to      { transform: translateX(0); }
-}
-
-.ng-enter { animation: slideInRight 0.3s both ease; z-index: 8888; }
-.ng-leave { animation: slideOutLeft 0.3s both ease; z-index: 9999; }
-
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
