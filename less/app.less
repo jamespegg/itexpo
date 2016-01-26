@@ -47,10 +47,12 @@ main {
 }
 
 .btn-block-flexbox {
-    flex : 1;
     display : flex;
-    flex-wrap : wrap;
     height : 100%;
+    width : 50%;
+    float : left;
+    flex-direction: column;
+    margin-top : 0 !important;
 }
 
 .btn-block-flexbox .btn {
@@ -60,7 +62,6 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-width : 50%;
 }
 
 .btn-block-flexbox .btn .btn-text {
