@@ -6732,6 +6732,8 @@ body {
   padding-top: 51px;
 }
 main {
+  position: relative;
+  display: block;
   height: 100%;
 }
 .navbar {
