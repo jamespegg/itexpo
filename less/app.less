@@ -3,6 +3,7 @@
 @brand-red : #9E004F;
 @brand-orange : #DF781C;
 @brand-purple : #472F91;
+@brand-green : #73A534;
 
 @border-radius-base:        0;
 @border-radius-large:       0;
@@ -48,7 +49,7 @@ main {
 .btn-block-flexbox {
     flex : 1;
     display : flex;
-    flex-direction: column;
+    flex-wrap : wrap;
     height : 100%;
 }
 
@@ -59,6 +60,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    min-width : 50%;
 }
 
 .btn-block-flexbox .btn .btn-text {
@@ -66,15 +68,19 @@ main {
 }
 
 .btn-brand-red {
-  .button-variant(@btn-primary-color; @brand-red; darken(@brand-red, 10%));
+  .button-variant(@btn-primary-color; @brand-red; transparent);
 }
 
 .btn-brand-orange {
-  .button-variant(@btn-primary-color; @brand-orange; darken(@brand-orange, 10%));
+  .button-variant(@btn-primary-color; @brand-orange; transparent);
 }
 
 .btn-brand-purple {
-  .button-variant(@btn-primary-color; @brand-purple; darken(@brand-purple, 10%));
+  .button-variant(@btn-primary-color; @brand-purple; transparent);
+}
+
+.btn-brand-green {
+  .button-variant(@btn-primary-color; @brand-green; transparent);
 }
 
 .list-group {
