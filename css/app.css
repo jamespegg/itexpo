@@ -6726,7 +6726,7 @@ button.close {
 }
 html,
 body {
-  height: 100vh;
+  height: 100%;
 }
 body {
   padding-top: 51px;
@@ -7053,7 +7053,6 @@ fieldset[disabled] .btn-brand-green.focus {
     border-radius: 6px;
   }
   body {
-    height: 100%;
     overflow: hidden;
     overflow-y: auto;
     background: #fff;
