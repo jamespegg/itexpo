@@ -6745,6 +6745,8 @@ main {
   top: 0;
   padding: 15px;
   color: #FFF;
+  font-size: 14px;
+  line-height: 1.42857143;
 }
 .navbar-back:active,
 .navbar-back:focus,
@@ -6754,6 +6756,8 @@ main {
 }
 .navbar-text {
   float: none !important;
+  font-size: 20px;
+  line-height: 1;
 }
 .btn-block-flexbox {
   display: flex;
